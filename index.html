@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html><head><meta https-equiv="Content-Type" content="text/html; charset=GB2312">
+<title>富士天下VIP影视</title>
+<link rel="icon" type="image/x-icon" href="movie-images/logo.png" >
+<meta name="keywords" content="VIP视频观看通道,VIP影视云解析接口,云解析接口,VIP影视网,免费云解析">
+<meta name="description" content="免费观看土豆,优酷,CNTV,新浪,搜狐等VIP视频,无广告！">
+<meta https-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="movie-images/jquery.min.js" type="text/javascript"></script>
+<script src="movie-images/layer.js" type="text/javascript"></script>
+<link rel="stylesheet" href="movie-images/layer.css" id="layui_layer_skinlayercss">
+<link href="movie-images/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="head-v3">
+<div class="navigation-up">
+<div class="navigation-inner">
+<div class="navigation-v3">
+<ul>
+    <li class="imgs"><img src="movie-images/1.jpg" width="100%" height="100%"  /></li>
+    <li class="nav-up-selected-inpage" _t_nav="home"><h2><a href="">富士天下VIP影视</a></h2></li> &nbsp;&nbsp;&nbsp;
+				</ul>
+			</div>
+		</div>
+	</div>
+<div class="centers">
+    <div class="searchs">
+        <div class="from">
+          <input name="v" id="v" type="text" class="text" placeholder="例：https://v.youku.com/v_show/id_XMjI3NzIwMDA0MA==.html">
+		  <img src="movie-images/urgclose_text.png" class="urog-regclose" onclick="clicks()" style="cursor:pointer;vertical-align:middle;" title="清空内容">
+		  <input type="submit" name="post" id="post" class="button" value="立即播放">   
+        </div>
+        <div id="clear1"></div>
+    </div>
+    <div id="a1"></div> 
+    <div class="tips">
+            <div id="clear" class="height20"></div>
+			<strong style="font-size:18px;color:red;background:#f7f7f7;display:block;padding:8px 0px;border-bottom:1px solid #999;">现已支持以下网站视频播放(包含VIP电影)：</strong>
+            <div class="logos_lists">
+                <dl>
+                	<dt><a target="_blank" href="https://www.le.com/"><img src="movie-images/letvlogo.png"></a></dt>
+                    <dd>乐视TV视频</dd>
+                </dl>
+                <dl>
+                	<dt><a target="_blank" href="https://v.qq.com/"><img src="movie-images/qqlogo.png" width="150" height="35"></a></dt>
+                    <dd>腾讯视频</dd>
+                </dl>
+				<dl>
+                	<dt><a target="_blank" href="https://www.iqiyi.com/"><img src="movie-images/iqiyi.png" width="110" height="35"></a></dt>
+                    <dd>爱奇艺视频</dd>
+                </dl>
+                <dl>
+                	<dt><a target="_blank" href="https://www.youku.com/"><img src="movie-images/youkulogo.png"></a></dt>
+                    <dd>优酷视频</dd>
+                </dl>
+                <dl>
+                	<dt><a target="_blank" href="https://www.mgtv.com/"><img src="movie-images/hunantvlogo.png"></a></dt>
+                    <dd>芒果TV视频</dd>
+                </dl>
+                <dl>
+                	<dt><a target="_blank" href="https://tv.sohu.com/"><img src="movie-images/sohulogo.png"></a></dt>
+                    <dd>搜狐视频</dd>
+                </dl>
+                <div  style="font-size:18px;color:#ccc;background:#f7f7f7;display:block;padding:8px 0px;border-top:1px solid #999;clear:both;">富士天下官网 www.bigbey.com</div>
+            </div>
+    </div>
+<script type="text/javascript">
+	$("#post").bind("click",function(){
+		var vurl = $('#v').val();
+		if ($('#v').val() == ""){
+			layer.alert('请输入视频链接！');
+			$('#v').focus();
+			return (false)
+			}else{
+				if(vurl.indexOf("iqiyi.com")||vurl.indexOf("qq.com")){var xurl='https://yun.mt2t.com/yun?url=';}else{var xurl='https://yyygwz.com/index.php?url=';}
+				document.getElementById('a1').innerHTML = "<iframe width='100%' height='500' allowfullscreen=“true” frameborder='0' scrolling='no' src='" + xurl+vurl + "'></iframe>"
+			}
+	});
+	function clicks(){
+		document.getElementById('v').value="";
+	}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e4bbcc19716cbb012b89dd4b137ce342";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</div>
+</div>
+</body>
+</html>
